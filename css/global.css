@@ -1,0 +1,60 @@
+:root {
+  --primary-color: #c18f59;
+  --black: #000000;
+  --light-black: #777777;
+  --dark-black: #222222;
+
+  --size-100: 0.6875rem;
+  --size-200: 0.875rem;
+  --size-250: 1.125rem;
+  --size-300: 1.5rem;
+  --size-400: 1.875rem;
+  --size-500: 2.375rem;
+  --size-600: 2.8125rem;
+  --size-700: 5.625rem;
+
+  --normal-size: 1rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@font-face {
+  font-family: Calisto-MT;
+  src: url(/fonts/Calisto-MT.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: Calisto-MT-Bold;
+  src: url(/fonts/Calisto-MT-Bold.ttf) format(truetype);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Calisto-MT-Italic;
+  src: url(/fonts/Calisto-MT-Italic.ttf) format(truetype);
+}
