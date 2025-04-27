@@ -1,14 +1,32 @@
+@font-face {
+  font-family: Calisto-MT;
+  src: url(/fonts/Calisto-MT.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: Calisto-MT-Bold;
+  src: url(/fonts/Calisto-MT-Bold.ttf) format(truetype);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Calisto-MT-Italic;
+  src: url(/fonts/Calisto-MT-Italic.ttf) format(truetype);
+}
+
 :root {
   --primary-color: #c18f59;
   --black: #000000;
   --light-black: #777777;
   --dark-black: #222222;
+  --white: #ffffff;
 
   --size-100: 0.6875rem;
   --size-200: 0.875rem;
   --size-250: 1.125rem;
   --size-300: 1.5rem;
   --size-400: 1.875rem;
+  --size-450: 2.1875rem;
   --size-500: 2.375rem;
   --size-600: 2.8125rem;
   --size-700: 5.625rem;
@@ -22,6 +40,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  min-height: 200vh;
+  font-family: Calisto-MT;
 }
 
 ul {
@@ -43,18 +66,27 @@ select {
   font: inherit;
 }
 
-@font-face {
-  font-family: Calisto-MT;
-  src: url(/fonts/Calisto-MT.ttf) format(truetype);
+.scroll-disabler {
+  height: 100vh;
+  overflow: hidden;
 }
 
-@font-face {
-  font-family: Calisto-MT-Bold;
-  src: url(/fonts/Calisto-MT-Bold.ttf) format(truetype);
-  font-weight: bold;
+/* Utility classes */
+.site-container {
+  width: 62%;
+  margin-inline: auto;
 }
 
-@font-face {
-  font-family: Calisto-MT-Italic;
-  src: url(/fonts/Calisto-MT-Italic.ttf) format(truetype);
+.btn {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  padding: 0.6rem 1.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+:where(.spacing-between > :not(:first-child)) {
+  --gap: 1.2rem;
+  margin-top: var(--gap);
 }
