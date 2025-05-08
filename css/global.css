@@ -66,6 +66,10 @@ select {
   font: inherit;
 }
 
+body {
+  min-height: 300vh;
+}
+
 .scroll-disabler {
   height: 100vh;
   overflow: hidden;
