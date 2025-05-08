@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/books.css" />
+    <link rel="stylesheet" href="css/counter.css" />
   </head>
   <body>
     <!-- Header Section -->
     <header class="header">
       <nav class="nav">
-        <div class="nav__container">
+        <div class="nav__container primary-container">
           <a href="#" class="site-logo"><img src="images/site-logo.png" /></a>
           <div class="menu">
             <ul class="menu__list">
@@ -33,7 +35,7 @@
         </div>
       </nav>
       <div class="hero">
-        <div class="hero__container site-container">
+        <div class="hero__container primary-container secondary-container">
           <div class="hero__image">
             <img src="images/top-banner-author.jpg" />
           </div>
@@ -69,8 +71,8 @@
     <!-- End of Header section -->
 
     <!-- About section -->
-    <section class="about">
-      <div class="about__container">
+    <section class="about section">
+      <div class="about__container primary-container">
         <div class="about__card card col">
           <img src="./images/about-me.jpg" alt="The Author's Picture" />
           <h2 class="card__title about__card__title">Jhone Smith</h2>
@@ -84,7 +86,7 @@
           <div class="carousel">
             <ul class="carousel__slider">
               <li class="carousel__slide">
-                <h2 class="carousel__slide__title">About me</h2>
+                <h2 class="carousel__slide__title section-title">About me</h2>
                 <p class="carousel__slide__text">
                   He has work appearing or forthcoming in over a dozen venues,
                   including Buzzy Mag, The Spirit of Poe, and the British
@@ -101,7 +103,7 @@
                 </div>
               </li>
               <li class="carousel__slide">
-                <h2 class="carousel__slide__title">About me 2</h2>
+                <h2 class="carousel__slide__title section-title">About me 2</h2>
                 <p class="carousel__slide__text">
                   He has work appearing or forthcoming in over a dozen venues,
                   including Buzzy Mag, The Spirit of Poe, and the British
@@ -121,6 +123,106 @@
             <div class="carousel__navigation">
               <button class="carousel__btn carousel__prev-btn">&lt;</button>
               <button class="carousel__btn carousel__next-btn">&gt;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About section -->
+
+    <!-- Books section -->
+    <section class="books section">
+      <div class="books__container primary-container">
+        <h2 class="books__title section-title">New Books And CD</h2>
+        <div class="books__row">
+          <div class="books__col">
+            <div class="books__col__header">
+              <img src="images/books-1.jpg" />
+            </div>
+            <div class="books__col__body">
+              <h3 class="books__col__title sub-section-title">Olivani</h3>
+              <span class="books__col__price">$15.00</span>
+              <div class="books__col__rating">
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+              </div>
+            </div>
+          </div>
+          <div class="books__col">
+            <div class="books__col__header">
+              <img src="images/books-2.jpg" />
+            </div>
+            <div class="books__col__body">
+              <h3 class="books__col__title sub-section-title">
+                Molleon's Life
+              </h3>
+              <span class="books__col__price">$22.00</span>
+              <div class="books__col__rating">
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+              </div>
+            </div>
+          </div>
+          <div class="books__col">
+            <div class="books__col__header">
+              <img src="images/books-3.jpg" />
+            </div>
+            <div class="books__col__body">
+              <h3 class="books__col__title sub-section-title">Love is Love</h3>
+              <span class="books__col__price">$25.00</span>
+            </div>
+          </div>
+          <div class="books__col">
+            <div class="books__col__header">
+              <img src="images/books-4.jpg" />
+            </div>
+            <div class="books__col__body">
+              <h3 class="books__col__title sub-section-title">Give Me Also</h3>
+              <span class="books__col__price">$30.00</span>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn books__btn">View more</button>
+      </div>
+    </section>
+    <!-- End of books section  -->
+
+    <!-- counter section -->
+    <section class="counter section">
+      <div class="counter__container primary-container">
+        <div class="counter__row">
+          <div class="counter__col">
+            <h2 class="counter__col__header" data-count="50">0</h2>
+            <div class="counter__col__footer">
+              <img src="images/counter-1.png" />
+              <span>Books</span>
+            </div>
+          </div>
+          <div class="counter__col">
+            <h2 class="counter__col__header" data-count="600">0</h2>
+            <div class="counter__col__footer">
+              <img src="images/counter-2.png" />
+              <span>Pages</span>
+            </div>
+          </div>
+          <div class="counter__col">
+            <h2 class="counter__col__header" data-count="2000">0</h2>
+            <div class="counter__col__footer">
+              <img src="images/counter-3.png" />
+              <span>Sales</span>
+            </div>
+          </div>
+          <div class="counter__col">
+            <h2 class="counter__col__header" data-count="125">0</h2>
+            <div class="counter__col__footer">
+              <img src="images/counter-4.png" />
+              <span>Awards</span>
             </div>
           </div>
         </div>

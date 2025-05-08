@@ -67,18 +67,40 @@ select {
 }
 
 body {
-  min-height: 300vh;
+  min-height: 900vh;
 }
 
+/* Utility classes */
 .scroll-disabler {
   height: 100vh;
   overflow: hidden;
 }
 
-/* Utility classes */
-.site-container {
+.section {
+  margin: 3rem 0;
+}
+
+.primary-container {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.secondary-container {
   width: 62%;
   margin-inline: auto;
+}
+
+@media (min-width: 540px) {
+  .secondary-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .primary-container {
+    width: 85%;
+  }
 }
 
 .btn {
@@ -88,6 +110,27 @@ body {
   color: var(--primary-color);
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.section-title {
+  font-size: 30px;
+  color: var(--dark-black);
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 10px;
+  background-image: url("../images/double-line.svg");
+  background-repeat: no-repeat;
+  margin: 1rem auto 0rem;
+}
+
+@media (min-width: 650px) {
+  .section-title {
+    font-size: 38px;
+  }
 }
 
 :where(.spacing-between > :not(:first-child)) {
