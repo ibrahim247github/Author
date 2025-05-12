@@ -1,4 +1,5 @@
-const carouselSlider = document.querySelector(".carousel__slider");
+// ABOUT CAROUSEL
+const carouselSlider = document.querySelector("#about__carousel__slider");
 const nextBtn = document.querySelector("#carousel__next-btn");
 const prevBtn = document.querySelector("#carousel__prev-btn");
 
@@ -12,7 +13,8 @@ prevBtn.addEventListener("click", () => {
   prevSlide(carouselSlider);
 });
 
-const blogCarouselSlider = document.querySelector(".blog__carousel__slider");
+// BLOG CAROUSEL
+const blogCarouselSlider = document.querySelector("#blog__carousel__slider");
 blogCarouselSlider.style.width = `${
   blogCarouselSlider.childElementCount * 100
 }%`;
@@ -28,6 +30,26 @@ blogPrevBtn.addEventListener("click", () => {
   prevSlide(blogCarouselSlider);
 });
 
+// CLIENT CAROUSEL
+const clientCarouselSlider = document.getElementById(
+  "client__carousel__slider"
+);
+clientCarouselSlider.style.width = `${
+  clientCarouselSlider.childElementCount * 100
+}%`;
+
+const clientNextBtn = document.getElementById("client__carousel__next-btn");
+const clientPrevBtn = document.getElementById("client__carousel__prev-btn");
+
+clientNextBtn.addEventListener("click", () => {
+  nextSlide(clientCarouselSlider);
+});
+
+clientPrevBtn.addEventListener("click", () => {
+  prevSlide(clientCarouselSlider);
+});
+
+// FUNCTIONS
 function nextSlide(carouselSlider) {
   carouselSlider.classList.add("carousel-transition");
   carouselSlider.style.transform = `translateX(-${

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/books.css" />
     <link rel="stylesheet" href="css/counter.css" />
     <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/client.css" />
   </head>
   <body>
     <!-- Header Section -->
@@ -85,7 +86,7 @@
 
         <div class="about__body col">
           <div class="carousel">
-            <ul class="carousel__slider">
+            <ul class="carousel__slider" id="about__carousel__slider">
               <li class="carousel__slide">
                 <h2 class="carousel__slide__title section-title">About me</h2>
                 <p class="carousel__slide__text">
@@ -246,7 +247,7 @@
       <div class="blog__container primary-container">
         <h2 class="blog__title section-title">My Blog</h2>
         <div class="blog__carousel">
-          <ul class="blog__carousel__slider">
+          <ul class="blog__carousel__slider" id="blog__carousel__slider">
             <li class="blog__carousel__slide">
               <div class="blog__carousel__slide__inner">
                 <div class="blog__carousel__slide__image">
@@ -335,6 +336,72 @@
         </div>
       </div>
     </section>
+    <!-- End of blog section -->
+
+    <!-- client section -->
+    <section class="client section">
+      <div class="client__container primary-container">
+        <div class="client__carousel">
+          <ul class="client__carousel__slider" id="client__carousel__slider">
+            <li class="carousel__slide">
+              <h2 class="carousel__slide__title section-title">
+                What People Are Saying
+              </h2>
+              <p class="carousel__slide__text">
+                “Pudding croissant cake candy canes fruitcake sweet roll pastry
+                gummies sugar plum. Tart pastry danish soufflé donut bear claw
+                chocolate cake marshmallow chupa chups. Jelly danish gummi bears
+                cake donut powder chocolate cake. Bonbon soufflé lollipop
+                biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate
+                bar croissant cake. Pie caramels gummies danish.”
+              </p>
+              <div class="carousel__footer">
+                <img src="images/quotes.svg" />
+                <h3>David Dizon</h3>
+                <span>Reader</span>
+              </div>
+            </li>
+
+            <li class="carousel__slide">
+              <h2 class="carousel__slide__title section-title">
+                What People Are Saying 2
+              </h2>
+              <p class="carousel__slide__text">
+                “Pudding croissant cake candy canes fruitcake sweet roll pastry
+                gummies sugar plum. Tart pastry danish soufflé donut bear claw
+                chocolate cake marshmallow chupa chups. Jelly danish gummi bears
+                cake donut powder chocolate cake. Bonbon soufflé lollipop
+                biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate
+                bar croissant cake. Pie caramels gummies danish.”
+              </p>
+              <div class="carousel__footer">
+                <img src="images/quotes.svg" />
+                <h3>David Dizon</h3>
+                <span>Reader</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="carousel__navigation">
+            <button
+              type="button"
+              class="carousel__btn client__carousel__prev-btn"
+              id="client__carousel__prev-btn"
+            >
+              &lt;
+            </button>
+            <button
+              type="button"
+              class="carousel__btn client__carousel__next-btn"
+              id="client__carousel__next-btn"
+            >
+              &gt;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of client section -->
     <script src="./js/index.js"></script>
     <script src="./js/carousel.js"></script>
   </body>

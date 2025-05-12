@@ -1,0 +1,65 @@
+.client {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/quotes-bckg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0 4rem;
+}
+
+.client.section {
+  margin-bottom: 0;
+}
+
+.client__carousel {
+  text-align: center;
+  color: var(--white);
+  overflow: hidden;
+}
+
+@media (min-width: 1100px) {
+  .client {
+    padding: 8rem 0;
+  }
+  .client__carousel {
+    width: 50%;
+    margin-inline: auto;
+  }
+}
+
+.client__carousel__slider {
+  display: flex;
+}
+
+.client .carousel__slide__text {
+  padding: 0 5%;
+  margin-top: 1.2rem;
+}
+
+.client .carousel__slide__text::first-letter {
+  font-size: 16px;
+}
+
+.client .carousel__footer {
+  margin: 3rem 0 2rem;
+}
+
+.client .carousel__footer h3 {
+  color: var(--primary-color);
+}
+
+@media (min-width: 1000px) {
+  .client .carousel__navigation {
+    width: 30%;
+    max-width: 150px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1100px) {
+  .client .carousel__navigation {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
