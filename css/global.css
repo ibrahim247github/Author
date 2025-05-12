@@ -66,10 +66,6 @@ select {
   font: inherit;
 }
 
-body {
-  min-height: 1100vh;
-}
-
 /* Utility classes */
 .scroll-disabler {
   height: 100vh;
