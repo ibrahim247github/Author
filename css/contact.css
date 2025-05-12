@@ -1,0 +1,158 @@
+.contact {
+  background-color: #343434;
+  padding: 4rem 0;
+}
+
+.contact__top {
+  max-width: 250px;
+  margin-inline: auto;
+}
+
+@media (max-width: 300px) {
+  .contact__top {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.contact__image img {
+  display: block;
+  width: 100%;
+  min-width: 250px;
+  margin-bottom: 0.8rem;
+}
+
+.contact__image a {
+  color: var(--primary-color);
+}
+
+.contact__info {
+  padding-left: 7.5%;
+  margin: 1.5rem auto 0;
+}
+
+.contact__info__title {
+  color: var(--white);
+  margin-bottom: 2rem;
+  font-size: 20px;
+  letter-spacing: 0.15rem;
+}
+
+.contact__info span {
+  color: #aaaaaa;
+  display: block;
+  white-space: nowrap;
+}
+
+.contact__info .phone {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.contact__social__links {
+  margin: 1rem 0 0;
+  justify-content: flex-start;
+}
+
+.contact__social__links .social__links__icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+@media (min-width: 610px) {
+  .contact__top {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    gap: 2.5rem;
+  }
+
+  .contact__info {
+    margin: 0;
+    padding-left: 0;
+  }
+}
+
+/* Contact Form Css */
+.contact__form {
+  margin: 3rem 0 0;
+}
+
+@media (min-width: 610px) {
+  .contact__form {
+    margin: 2rem 0 0;
+  }
+}
+
+.form__title {
+  color: var(--white);
+  margin-bottom: 2rem;
+  letter-spacing: 0.15rem;
+}
+
+.form p {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 950px) {
+  .form p {
+    gap: 3%;
+  }
+}
+
+.form p input {
+  background-color: #282828;
+  padding: 1.2rem;
+  border: none;
+  width: 50%;
+}
+
+.form p input::placeholder {
+  color: #aaaaaa;
+}
+
+.form p textarea {
+  background-color: #282828;
+  width: 100%;
+  border: none;
+  padding: 1.2rem;
+}
+
+.form__btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 1.1rem 3rem;
+  border: 0;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form__btn:hover {
+  background-color: #777;
+}
+
+@media (min-width: 1250px) {
+  .contact {
+    padding: 7rem 0;
+  }
+
+  .contact__container {
+    display: flex;
+    gap: 5%;
+  }
+
+  .contact__top {
+    width: 50%;
+  }
+
+  .contact__form {
+    width: 50%;
+    margin: 0;
+  }
+}

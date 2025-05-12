@@ -67,7 +67,7 @@ select {
 }
 
 body {
-  min-height: 900vh;
+  min-height: 1100vh;
 }
 
 /* Utility classes */
