@@ -115,6 +115,7 @@ body {
 .section-title {
   font-size: 30px;
   color: var(--dark-black);
+  text-align: center;
 }
 
 .section-title::after {
@@ -131,6 +132,17 @@ body {
   .section-title {
     font-size: 38px;
   }
+}
+
+@media (min-width: 1240px) {
+  .section-title {
+    font-size: 48px;
+  }
+}
+
+.sub-section-title {
+  color: var(--dark-black);
+  font-size: 1.125rem;
 }
 
 :where(.spacing-between > :not(:first-child)) {

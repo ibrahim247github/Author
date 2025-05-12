@@ -49,12 +49,13 @@ function startCounter() {
   counters.forEach((counter) => {
     let number = 0;
     const targetNumber = Number(counter.dataset.count);
-    const increment = Math.ceil(targetNumber / 2000);
-    let interval = setInterval(() => {
-      counter.textContent = `${(number += increment)}`;
-      if (number >= targetNumber) {
+    const duration = 2000;
+    const milliseconds = duration / targetNumber;
+    const interval = setInterval(() => {
+      counter.textContent = `${number++}`;
+      if (number > targetNumber) {
         clearInterval(interval);
       }
-    }, 10);
+    }, milliseconds);
   });
 }

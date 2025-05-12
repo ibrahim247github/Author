@@ -73,10 +73,6 @@
   font-size: 1.125rem;
 }
 
-.sub-section-title {
-  color: var(--dark-black);
-}
-
 .books__col__price {
   color: var(--primary-color);
   font-family: Calisto-MT-Italic;
